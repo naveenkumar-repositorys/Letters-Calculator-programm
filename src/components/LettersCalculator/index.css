@@ -1,0 +1,97 @@
+/* Write your code here. */
+.bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(To Right, #1d976c, #93f9b9);
+}
+.imageContainer {
+  width: 45%;
+  height: 500px;
+  order: 2;
+}
+.imgEl {
+  width: 100%;
+  height: 390px;
+}
+.calculateContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  height: 500px;
+  order: 1;
+}
+.headEl {
+  width: 90%;
+  height: 92px;
+  font-size: 40px;
+  font-family: 'Roboto';
+  color: #ffff;
+}
+.labelEl {
+  font-size: 25px;
+  color: #ffff;
+  align-self: flex-start;
+}
+.claculatorInputEl {
+  width: 470px;
+  height: 45px;
+  font-size: 28px;
+  background-color: transparent;
+  border: 2px solid #ffff;
+}
+.elementsSum {
+  width: 320px;
+  height: 65px;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #ffff;
+  border-radius: 8px;
+  color: #219a6f;
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .bg-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .imageContainer {
+    width: 85%;
+    height: 300px;
+    order: 1;
+  }
+  .imgEl {
+    width: 100%;
+    height: 280px;
+  }
+  .calculateContainer {
+    width: 85%;
+    height: 300px;
+    order: 2;
+    align-items: center;
+  }
+  .headEl {
+    font-size: 30px;
+  }
+  .labelEl {
+    font-size: 18px;
+  }
+  .claculatorInputEl {
+    width: 400px;
+  }
+  .elementsSum {
+    height: 105px;
+    font-size: 32px;
+    align-self: center;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+}

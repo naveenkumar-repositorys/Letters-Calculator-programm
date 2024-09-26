@@ -15,10 +15,7 @@ class LettersCalculator extends Component {
 
   render() {
     const {searchInput, count} = this.state
-    const result = () => {
-      return `No.of letters: ${count}`
-    }
-
+    
     return (
       <div className="bg-container">
         <div className="imageContainer">
@@ -41,7 +38,7 @@ class LettersCalculator extends Component {
             onChange={this.valueFromInput}
             value={searchInput}
           />
-          <p className="elementsSum">{result()}</p>
+          <p className="elementsSum">No.of letters: {count}</p>
         </div>
       </div>
     )
